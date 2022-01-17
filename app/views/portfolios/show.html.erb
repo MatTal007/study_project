@@ -6,6 +6,6 @@
   <% @portfolio_item.technology.each do |t| %>
     <p><%= t.name %></p>
   <% end %>
-<p><%= link_to "Edit Item", edit_portfolio_path(@portfolio_item.id) %></p>
+<p><%= link_to "Edit Item", edit_portfolio_path(@portfolio_item.id) if logged_in?(:site_admin) %></p>
 <p><%= link_to "Back", portfolios_path %></p>
 
