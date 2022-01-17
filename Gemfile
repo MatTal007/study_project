@@ -55,3 +55,5 @@ gem 'devise', '~> 4.8'
 gem 'bootstrap', '~> 5.1.3'
 
 gem 'jquery-rails'
+
+gem 'petergate', '~> 3.0'
