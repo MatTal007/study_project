@@ -4,6 +4,7 @@
     <title><%= @page_title %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="keywords" CONTENT="<%= @seo_keywords %>">
@@ -18,13 +19,15 @@
 
       <%= render "shared/application_nav" %>
 
-      <%= login_helper %>
 
       <%= yield %>
       <hr>
-      <center><%= @copyright %></center>
+
+      <%= render "shared/application_footer" %>
+
       
-      <%= source_helper %>
+      
+      <%= source_helper%>
     </div>
   </body>
 </html>
