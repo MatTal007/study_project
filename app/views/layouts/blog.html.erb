@@ -15,13 +15,7 @@
 
   <body>
     <!-- Start of nav -->
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link active" href="#">Subscribe</a>
-        </nav>
-      </div>
-    </div>
+    <%= render 'shared/blog_nav' %>
     <!-- End of nav -->
 
     <!-- Start of blog header -->
@@ -36,7 +30,7 @@
     <!-- Start of container and row element -->
     <div class="container">
       <div class="row">
-        <%= login_helper %>
+        
         <%= yield %>
 
         <!-- Start of sidebar -->
