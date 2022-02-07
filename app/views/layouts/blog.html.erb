@@ -21,16 +21,18 @@
     <!-- Start of blog header -->
     <div class="blog-header">
       <div class="container">
-        <h1 class="blog-title">The Bootstrap Blog</h1>
-        <p class="lead blog-description">An exapmle temple built with Bootstrap</p>
+        <h1 class="blog-title">The Blog</h1>
+        <p class="lead blog-description">An example temple built with Bootstrap.</p>
+        <%= link_to 'Write a New Blog', new_blog_path if logged_in?(:site_admin) %>
       </div>
     </div>
     <!-- End of blog header -->
 
     <!-- Start of container and row element -->
     <div class="container">
+    
       <div class="row">
-        
+  
         <%= yield %>
 
         <!-- Start of sidebar -->
@@ -54,6 +56,7 @@
             </ol>
           </div>
         </div>
+      </div>
         <!-- End of sidebar -->
 
         <!-- Start of footer -->
@@ -65,9 +68,8 @@
         </footer>
         <!-- End of footer -->
             
-        <%= render "shared/nav", location: 'bottom' %>
         <%= source_helper %>
-      </div>
+      
     </div>
     <!-- End of container and row element -->  
   </body>
