@@ -54,10 +54,15 @@ gem 'devise', '~> 4.8'
 
 gem 'bootstrap', '~> 5.1.3'
 
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.4'
 
 gem 'petergate', '~> 3.0'
 
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
 
 gem 'kaminari', '~> 1.2', '>= 1.2.2' 
+
+gem 'rails-ujs', '~> 0.1.0'
+
+gem 'popper_js', '~> 2.9', '>= 2.9.3'
+
