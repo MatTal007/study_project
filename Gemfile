@@ -66,3 +66,5 @@ gem 'rails-ujs', '~> 0.1.0'
 
 gem 'popper_js', '~> 2.9', '>= 2.9.3'
 
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+
